@@ -29,9 +29,9 @@ class WebServer {
             if (fileName.startsWith("/") == true) {
                 fileName = fileName.substring(1);
             }
-            File file = new File("C:\\Users\\Itzel\\Desktop\\WebServer\\src\\webserver\\Letreros.html");
+            File file = new File("Letreros.html");
             int numOfBytes = (int) file.length();
-            FileInputStream inFile = new FileInputStream("C:\\Users\\Itzel\\Desktop\\WebServer\\src\\webserver\\Letreros.html");
+            FileInputStream inFile = new FileInputStream("Letreros.html");
             byte[] fileInBytes = new byte[numOfBytes];
             inFile.read(fileInBytes);
             outToClient.writeBytes("HTTP/1.0 200 Document Follows\r\n");
